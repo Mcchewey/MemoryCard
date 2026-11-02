@@ -17,7 +17,7 @@ const additionalCards = [
   { name: 'Fe del Mundo', file: 'front Fe del Mundo.png' },
   { name: 'Fernando Amorsolo', file: 'front Fernando Amorsolo.png' },
   { name: 'Gregoria de Jesus', file: 'front Gregoria de Jesus.png' },
-  { name: 'The Palette', file: 'front Pallet.png' },
+  { name: 'The Palette', file: 'front Palette.png' },
   { name: 'A Question', file: 'front Question.png' },
   { name: 'Time', file: 'front time.png' },
   { name: 'Encarnación Alzona', file: 'front Encarnación Alzona.png' }
