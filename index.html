@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#423e52" />
+  <title>BoredGames Card Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="BoredGames home">
+      <img src="assets/logo.png" alt="BoredGames logo" />
+    </a>
+    <p class="tagline">we make games cause we’re bored</p>
+  </header>
+
+  <main class="game-layout">
+    <section class="board-panel" aria-label="Memory card game board">
+      <div class="board-topline">
+        <span id="board-size">4 × 4</span>
+        <span class="board-hint">Find every matching pair</span>
+      </div>
+      <div id="game-board" class="game-board difficulty-easy" aria-live="polite"></div>
+    </section>
+
+    <aside class="game-sidebar">
+      <div class="sidebar-heading"><h1>Card Match</h1></div>
+      <div class="sidebar-content">
+        <section class="info-section">
+          <h2>Objectives</h2>
+          <p>Flip the cards by clicking on them and find their matching pair. Try to complete the game in as few moves as possible!</p>
+        </section>
+
+        <section class="info-section">
+          <h2>Set Difficulty</h2>
+          <div class="difficulty-options" role="group" aria-label="Choose game difficulty">
+            <button class="difficulty-btn active" data-level="easy" aria-pressed="true">Easy <small>4×4</small></button>
+            <button class="difficulty-btn" data-level="medium" aria-pressed="false">Medium <small>6×4</small></button>
+            <button class="difficulty-btn" data-level="hard" aria-pressed="false">Hard <small>6×6</small></button>
+          </div>
+        </section>
+
+        <section class="info-section">
+          <h2>Game Details</h2>
+          <div class="stats-grid">
+            <div class="stat"><span>Moves</span><strong id="moves">0</strong></div>
+            <div class="stat"><span>Time</span><strong id="timer">00:00</strong></div>
+            <div class="stat"><span>Pairs</span><strong id="pairs">0/8</strong></div>
+            <div class="stat score-stat"><span>Score</span><strong id="score">0</strong></div>
+          </div>
+        </section>
+
+        <section class="info-section record-section">
+          <h2>Best Record</h2>
+          <div class="record-grid">
+            <div class="stat"><span>Moves</span><strong id="best-moves">—</strong></div>
+            <div class="stat"><span>Time</span><strong id="best-time">—</strong></div>
+            <div class="stat"><span>Score</span><strong id="best-score">—</strong></div>
+          </div>
+        </section>
+
+        <div class="sidebar-footer">
+          <button id="restart-btn" class="restart-btn">Restart</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">boredgames all rights reserved 2026</footer>
+
+  <div id="win-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="win-title" hidden>
+    <div class="modal-card">
+      <div class="win-mark">˃ 𖥦 ˂</div>
+      <h2 id="win-title">You did it!</h2>
+      <p id="win-message">All pairs found.</p>
+      <div class="win-stats">
+        <div><span>Moves</span><strong id="final-moves">0</strong></div>
+        <div><span>Time</span><strong id="final-time">00:00</strong></div>
+        <div><span>Score</span><strong id="final-score">0</strong></div>
+      </div>
+      <button id="play-again-btn" class="restart-btn">Play again</button>
+    </div>
+  </div>
+</body>
+</html>
