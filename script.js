@@ -10,14 +10,14 @@ const portraits = [
 const additionalCards = [
   { name: 'The Books', file: 'front Books.png' },
   { name: 'The Canvas', file: 'front Canvas.png' },
-  { name: 'Compass', file: 'front Compass.png' },
+  { name: 'Compass', file: 'front compass.png' },
   { name: 'Everlasting', file: 'front Everlasting.png' },
   { name: 'The Paint', file: 'front Paint.png' },
   { name: 'Emilio Jacinto', file: 'front Emilio Jacinto.png' },
   { name: 'Fe del Mundo', file: 'front Fe del Mundo.png' },
   { name: 'Fernando Amorsolo', file: 'front Fernando Amorsolo.png' },
   { name: 'Gregoria de Jesus', file: 'front Gregoria de Jesus.png' },
-  { name: 'The Palette', file: 'front Palette.png' },
+  { name: 'The Palette', file: 'front Pallet.png' },
   { name: 'A Question', file: 'front Question.png' },
   { name: 'Time', file: 'front time.png' },
   { name: 'Encarnación Alzona', file: 'front Encarnación Alzona.png' }
