@@ -19,7 +19,7 @@ const additionalCards = [
   { name: 'Gregoria de Jesus', file: 'front Gregoria de Jesus.png' },
   { name: 'The Palette', file: 'front Palette.png' },
   { name: 'A Question', file: 'front Question.png' },
-  { name: 'Time', file: 'front Time.png' },
+  { name: 'Time', file: 'front time.png' },
   { name: 'Encarnación Alzona', file: 'front Encarnación Alzona.png' }
 ];
 
